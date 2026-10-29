@@ -1,14 +1,14 @@
-
 :root {
   --header-bg: #00528d;
-  --main-bg:#F3E8D0;
-  --footer-bg:#0d8473;
+  --main-bg: #F3E8D0;
+  --footer-bg: #0d8473;
   --text-color: #000000;
 }
 
 * {
   box-sizing: border-box;
 }
+
 header {
   display: flex;
   flex-direction: row;
@@ -19,6 +19,7 @@ header {
 header nav {
   flex: 1;
 }
+
 .nav-icon {
   width: 50px;
   height: 50px;
@@ -42,23 +43,53 @@ header nav {
   justify-content: center;
   align-items: center;
 }
+
 body {
   margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   color: var(--text-color);
-  background:
-  linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
 }
-
-
 
 main {
   flex: 1;
   background-color: var(--main-bg);
   padding: 2rem;
 }
+
+.giris-character_area {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.giris-character_area img {
+  position: absolute;
+  inset: 0;
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  opacity: 0;
+}
+
+.giris-character_area .giris-resim-bekleme {
+  opacity: 1;
+}
+
+.auth-card:has(#username:focus) .giris-character_area img,
+.auth-card:has(#password:focus) .giris-character_area img,
+.auth-card:has(.girisbutton:focus) .giris-character_area img {
+  opacity: 0;
+}
+
+.auth-card:has(#username:focus) .giris-character_area img.giris-resim-bandana,
+.auth-card:has(#password:focus) .giris-character_area img.giris-resim-bakan,
+.auth-card:has(.girisbutton:focus) .giris-character_area img.giris-resim-basarili {
+  opacity: 1;
+}
+
 .auth-card {
   display: flex;
   flex-direction: column;
@@ -67,18 +98,17 @@ main {
   margin: 0 auto;
   padding: 2rem;
   border-radius: 1rem;
-  background-color: linear-gradient(to center, #ffffff, #f0f0f0);
+  background-color: var(--main-bg);
   text-align: center;
-  
 }
-.girisbutton{
-    background-color: #f3faff;
-    color: rgb(0, 0, 0);
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
+.girisbutton {
+  background-color: #f3faff;
+  color: rgb(0, 0, 0);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
 
 .girisbutton:hover {
   background-color: #00528d;

@@ -59,6 +59,38 @@ main {
   background-color: var(--main-bg);
   padding: 2rem;
 }
+.kayıt-character_area {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.kayıt-character_area img {
+  position: absolute;
+  inset: 0;
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  opacity: 0;
+}
+
+.kayıt-character_area .kayıt-resim-bekleme {
+  opacity: 1;
+}
+
+.auth-card:has(#email:focus) .kayıt-character_area img,
+.auth-card:has(#password:focus) .kayıt-character_area img,
+.auth-card:has(.kayıtbutton:focus) .kayıt-character_area img {
+  opacity: 0;
+}
+
+.auth-card:has(#email:focus) .kayıt-character_area img.kayıt-resim-bandana,
+.auth-card:has(#password:focus) .kayıt-character_area img.kayıt-resim-bakan,
+.auth-card:has(.kayıtbutton:focus) .kayıt-character_area img.kayıt-resim-basarili {
+  opacity: 1;
+}
+
 .auth-card {
   display: flex;
   flex-direction: column;
@@ -67,9 +99,8 @@ main {
   margin: 0 auto;
   padding: 2rem;
   border-radius: 1rem;
-  background-color: linear-gradient(to center, #ffffff, #f0f0f0);
+  background-color: var(--main-bg);
   text-align: center;
-  
 }
 .kayıtbutton{
     background-color: #f3faff;
