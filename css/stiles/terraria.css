@@ -55,8 +55,7 @@ body {
 main {
   flex: 1;
   padding: 2rem;
-  background:
-    url("../backgrounds/terrariaarkaplan.jpg") center / cover no-repeat fixed;
+  background: url("../backgrounds/terrariaarkaplan.jpg") center / cover no-repeat fixed;
 }
 
 footer {
