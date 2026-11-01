@@ -4,3 +4,5 @@ Hafta hafta videoların isimleri ve linkleri:
 
 Hafta 1 
 https://drive.google.com/file/d/1kLT7F81DFtYG4hl_CClgYQ60ueIWpHC_/view?usp=drivesdk
+Hafta 2
+https://drive.google.com/file/d/1ZgPwtbkvUDKXnB0TwCmj2zNohOF9xinl/view?usp=sharing
