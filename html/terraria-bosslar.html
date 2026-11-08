@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terraria</title>
+    <title>Terraria Boss Rehberi</title>
+    <link rel="stylesheet" href="../css/stiles/common.css">
     <link rel="stylesheet" href="../css/stiles/terraria-bosslar.css">
 </head>
 <body>
     <header>
-        <h1>Oyun Rehberi</h1>
-        <a href="homepage.html"><img  class="nav-icon" src="../css/backgrounds/sitelogo.jpg" alt="Oyun rehberi ana sayfasına ait, farklı oyun dünyalarının tanıtıldığı renkli bir manzara"></a><br>
+        <a class="brand-link" href="homepage.html" aria-label="Oyun Atlası ana sayfası"><img class="brand-logo" src="../images/oyun-atlasi-logo-03.svg" alt="Oyun Atlası"></a>
 
 
         <nav>
@@ -21,13 +21,236 @@
             </ul>
         </nav>
 
+        <img class="profile-avatar" src="../images/profile-placeholder.svg" alt="Profil">
     </header>
     <main>
-        <h1>Terraria</h1>
-    <section>
-        <h2>Bosslar ve Sıralar</h2>
-        <p>Terraria'da çeşitli bosslar vardır. Bu bosslar, oyuncuların karşılaştığı zorlukları ve görevleri artırır.</p>
-    </section>
+        <div class="boss-guide">
+            <h1>Terraria Boss Rehberi</h1>
+            <p>Terraria'da 33 boss vardır: 8 Pre-Hardmode, 10 Hardmode, 14 etkinlik ve 1 özel dünya bossu. Aşağıdaki can değerleri Klasik / Uzman / Usta sırasındadır.</p>
+
+            <section class="boss-progression" aria-labelledby="boss-progression-title">
+                <h2 id="boss-progression-title">İlerleme Dönüm Noktaları</h2>
+                <ol>
+                    <li><strong>Skeletron:</strong> Yenildiğinde Dungeon'a güvenli erişim açılır.</li>
+                    <li><strong>Wall of Flesh:</strong> Pre-Hardmode'u bitirir ve dünyayı kalıcı olarak Hardmode'a geçirir.</li>
+                    <li><strong>Üç mekanik boss:</strong> Yenildiklerinde Underground Jungle'da Plantera's Bulb belirmeye başlar.</li>
+                    <li><strong>Plantera ve Golem:</strong> Plantera Temple Key verir; Golem yenilince Dungeon girişindeki Cultist'ler ortaya çıkar.</li>
+                    <li><strong>Lunatic Cultist ve dört Celestial Pillar:</strong> Lunar Events'i başlatır; sütunların tamamı düşünce Moon Lord gelir.</li>
+                </ol>
+                <p>Pre-Hardmode'daki Eater of Worlds ve Brain of Cthulhu farklı dünya kötülüklerine bağlıdır; standart bir dünyada genellikle ikisinden yalnızca biri bulunur.</p>
+            </section>
+
+            <nav class="boss-index" aria-label="Boss listesi">
+                <h2>Boss Listesi</h2>
+                <div class="boss-index-grid">
+                    <section>
+                        <h3>Pre-Hardmode</h3>
+                        <ol>
+                            <li><a href="#boss-king-slime">King Slime</a></li>
+                            <li><a href="#boss-eye-of-cthulhu">Eye of Cthulhu</a></li>
+                            <li><a href="#boss-eater-of-worlds">Eater of Worlds</a></li>
+                            <li><a href="#boss-brain-of-cthulhu">Brain of Cthulhu</a></li>
+                            <li><a href="#boss-queen-bee">Queen Bee</a></li>
+                            <li><a href="#boss-deerclops">Deerclops</a></li>
+                            <li><a href="#boss-skeletron">Skeletron</a></li>
+                            <li><a href="#boss-wall-of-flesh">Wall of Flesh</a></li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h3>Hardmode</h3>
+                        <ol>
+                            <li><a href="#boss-queen-slime">Queen Slime</a></li>
+                            <li><a href="#boss-the-twins">The Twins</a></li>
+                            <li><a href="#boss-the-destroyer">The Destroyer</a></li>
+                            <li><a href="#boss-skeletron-prime">Skeletron Prime</a></li>
+                            <li><a href="#boss-plantera">Plantera</a></li>
+                            <li><a href="#boss-golem">Golem</a></li>
+                            <li><a href="#boss-duke-fishron">Duke Fishron</a></li>
+                            <li><a href="#boss-empress-of-light">Empress of Light</a></li>
+                            <li><a href="#boss-lunatic-cultist">Lunatic Cultist</a></li>
+                            <li><a href="#boss-moon-lord">Moon Lord</a></li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h3>Etkinlik Bossları</h3>
+                        <ol>
+                            <li><a href="#boss-dark-mage">Dark Mage</a></li>
+                            <li><a href="#boss-ogre">Ogre</a></li>
+                            <li><a href="#boss-betsy">Betsy</a></li>
+                            <li><a href="#boss-flying-dutchman">Flying Dutchman</a></li>
+                            <li><a href="#boss-mourning-wood">Mourning Wood</a></li>
+                            <li><a href="#boss-pumpking">Pumpking</a></li>
+                            <li><a href="#boss-everscream">Everscream</a></li>
+                            <li><a href="#boss-santa-nk1">Santa-NK1</a></li>
+                            <li><a href="#boss-ice-queen">Ice Queen</a></li>
+                            <li><a href="#boss-martian-saucer">Martian Saucer</a></li>
+                            <li><a href="#boss-solar-pillar">Solar Pillar</a></li>
+                            <li><a href="#boss-nebula-pillar">Nebula Pillar</a></li>
+                            <li><a href="#boss-vortex-pillar">Vortex Pillar</a></li>
+                            <li><a href="#boss-stardust-pillar">Stardust Pillar</a></li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h3>Özel Dünya</h3>
+                        <ol>
+                            <li><a href="#boss-mechdusa">Mechdusa</a></li>
+                        </ol>
+                    </section>
+                </div>
+            </nav>
+
+            <section class="boss-group" id="pre-hardmode">
+                <h2>Pre-Hardmode Bossları</h2>
+                <article class="boss-entry" id="boss-king-slime">
+                    <div class="boss-copy"><h3>King Slime</h3><p>Dev bir mavi slime olan King Slime, oyuncuya ışınlanabilir ve uzman modunda dikenli slime'lar çağırabilir.</p><p><strong>Çağırma:</strong> Slime Crown kullanın ya da Slime Rain sırasında yeterli sayıda slime yenmesini bekleyin.</p><p class="boss-stats"><strong>Can:</strong> 2.000 / 2.800 / 3.570</p></div>
+                    <img class="boss-animation" src="../animation/King_Slime.gif" alt="King Slime animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-eye-of-cthulhu">
+                    <div class="boss-copy"><h3>Eye of Cthulhu</h3><p>Gece ortaya çıkan dev göz, oyuncuya dalışlar yapar ve savaş sırasında Servants of Cthulhu'yu ortaya çıkarır. Canı azaldıkça özellikle uzman modunda saldırılarını sıklaştırır.</p><p><strong>Çağırma:</strong> Gece Suspicious Looking Eye kullanın; uygun koşullarda kendiliğinden de gelebilir.</p><p class="boss-stats"><strong>Can:</strong> 2.800 / 3.640 / 4.641</p></div>
+                    <img class="boss-animation" src="../animation/Eye_of_Cthulhu.gif" alt="Eye of Cthulhu animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-eater-of-worlds">
+                    <div class="boss-copy"><h3>Eater of Worlds</h3><p>Corruption'a bağlı, çok parçalı dev bir solucandır. Parçaları ayrıldığında ayrı ayrı saldırır; tüm parçaları küçültüp yok etmek gerekir.</p><p><strong>Çağırma:</strong> Corruption'da üç Shadow Orb kırın veya Worm Food kullanın.</p><p class="boss-stats"><strong>Toplam can:</strong> 10.050 / 15.120 / 19.296</p><p>Corruption'dan uzaklaşırsa savaştan çekilir; Demonite Ore ve Shadow Scale bırakır.</p></div>
+                    <img class="boss-animation" src="../animation/Eater_of_Worlds.png" alt="Eater of Worlds görseli" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-brain-of-cthulhu">
+                    <div class="boss-copy"><h3>Brain of Cthulhu</h3><p>Crimson'da karşılaşılan boss iki aşamalıdır: önce çevresindeki Creeper'lar yenir, ardından beyin saldırıya açık hale gelir ve hızla ışınlanır.</p><p><strong>Çağırma:</strong> Crimson'da üç Crimson Heart kırın veya Bloody Spine kullanın.</p><p class="boss-stats"><strong>Can:</strong> 1.250 / 2.125 / 2.709</p><p>Yalnızca Crimson'da çağrılabilir; yenildiğinde Crimtane Ore ve Tissue Sample elde edilir.</p></div>
+                    <img class="boss-animation" src="../animation/Brain_of_Cthulhu.gif" alt="Brain of Cthulhu animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-queen-bee">
+                    <div class="boss-copy"><h3>Queen Bee</h3><p>Jungle arı kovanında bulunan Larva'yı korur. Savaşta oyuncuya hücum eder, arılar çıkarır ve iğneler fırlatır.</p><p><strong>Çağırma:</strong> Underground Jungle'daki bir arı kovanında Larva'yı kırın veya Jungle'da Abeemination kullanın.</p><p class="boss-stats"><strong>Can:</strong> 3.400 / 4.760 / 6.069</p><p>Yenilmesi Witch Doctor'ın dünyada belirmesini sağlar.</p></div>
+                    <img class="boss-animation" src="../animation/Queen_Bee.gif" alt="Queen Bee animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-deerclops">
+                    <div class="boss-copy"><h3>Deerclops</h3><p>Snow biome'da görülen tek gözlü dev, farklı mesafelerde etkili saldırılar yapar ve oyuncu çok uzaklaşınca hasar almamaya başlayabilir.</p><p><strong>Çağırma:</strong> Snow biome'da Deer Thing kullanın; yeterli savunma veya can koşullarında blizzard sırasında doğal olarak da doğabilir.</p><p class="boss-stats"><strong>Can:</strong> 7.000 / 11.900 / 15.172</p></div>
+                    <img class="boss-animation" src="../animation/Deerclops.gif" alt="Deerclops animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-skeletron">
+                    <div class="boss-copy"><h3>Skeletron</h3><p>Dungeon'ın girişini korur. İki eliyle saldırır ve başını döndürerek oyuncuya yönelir; gece bitmeden yenilmezse çok daha tehlikeli hale gelir.</p><p><strong>Çağırma:</strong> Gece Dungeon girişindeki Old Man ile konuşup laneti kaldırın.</p><p class="boss-stats"><strong>Başın canı:</strong> 4.400 / 8.800 / 11.220</p><p>Yenilmesi Dungeon Guardian'ların doğmasını durdurur ve Dungeon'a erişim sağlar.</p></div>
+                    <img class="boss-animation" src="../animation/Skeletron.png" alt="Skeletron görseli" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-wall-of-flesh">
+                    <div class="boss-copy"><h3>Wall of Flesh</h3><p>Pre-Hardmode'un son bossudur. Underworld boyunca ilerler; gözlerinden lazer, ağzından Leech ve gövdesinden Hungry çıkarır. Yenildiğinde dünya kalıcı olarak Hardmode'a geçer.</p><p><strong>Çağırma:</strong> Guide hayattayken Guide Voodoo Doll'u Underworld'deki lavaya atın.</p><p class="boss-stats"><strong>Can:</strong> 8.000 / 11.200 / 14.280</p><p>Yenilmesi garantili Pwnhammer düşürür; bu çekiç altarları parçalayarak Hardmode cevherlerinin önünü açar.</p></div>
+                    <img class="boss-animation" src="../animation/Wall_of_Flesh.gif" alt="Wall of Flesh animasyonu" loading="lazy">
+                </article>
+            </section>
+
+            <section class="boss-group" id="hardmode-bosses">
+                <h2>Hardmode Bossları</h2>
+                <article class="boss-entry" id="boss-queen-slime">
+                    <div class="boss-copy"><h3>Queen Slime</h3><p>Hardmode'un erken döneminde karşılaşılabilen isteğe bağlı bir boss'tur. İlk aşamada sıçrar; sonraki aşamada havalanıp slime yardımcıları ve mermiler kullanır.</p><p><strong>Çağırma:</strong> Underground Hallow'da bulunan Gelatin Crystal'ı kullanın.</p><p class="boss-stats"><strong>Can:</strong> 18.000 / 28.800 / 36.720</p></div>
+                    <img class="boss-animation" src="../animation/Queen_Slime.png" alt="Queen Slime görseli" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-the-twins">
+                    <div class="boss-copy"><h3>The Twins</h3><p>Retinazer lazer atışlarına, Spazmatism ise hücumlara ve Cursed Flame saldırılarına odaklanır. İkisi de hasar aldıkça ikinci biçimlerine geçer.</p><p><strong>Çağırma:</strong> Gece Mechanical Eye kullanın.</p><p class="boss-stats"><strong>Can (Retinazer / Spazmatism):</strong> 20.000 / 23.000; Uzman: 30.000 / 34.500; Usta: 38.250 / 43.988</p><p>Loot'u son yenilen göz bırakır; ikisi de gün doğmadan yenilmezse kaçar.</p></div>
+                    <img class="boss-animation" src="../animation/The_Twins.gif" alt="The Twins animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-the-destroyer">
+                    <div class="boss-copy"><h3>The Destroyer</h3><p>Uzun mekanik bir solucan olarak blokların içinden geçer. Gövdesinden lazerler ateşler; hasar alan parçaları Probe'lar çıkarabilir.</p><p><strong>Çağırma:</strong> Gece Mechanical Worm kullanın.</p><p class="boss-stats"><strong>Can:</strong> 80.000 / 120.000 / 153.000</p><p>Eater of Worlds'ün aksine parçalara bölünmez; Hallowed Bar ve Soul of Might düşürür.</p></div>
+                    <img class="boss-animation" src="../animation/The_Destroyer.png" alt="The Destroyer görseli" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-skeletron-prime">
+                    <div class="boss-copy"><h3>Skeletron Prime</h3><p>Skeletron'un mekanik biçimidir; dört uzvunda farklı silahlar taşır. Zafer için yalnızca kafasını yenmek yeterlidir, ancak uzuvları saldırı baskısını artırır.</p><p><strong>Çağırma:</strong> Gece Mechanical Skull kullanın.</p><p class="boss-stats"><strong>Başın canı:</strong> 28.000 / 42.000 / 53.550; <strong>toplam:</strong> 59.000 / 88.500 / 112.836</p><p>Baş dönerken savunması yükselir; gece bitmeden yenilmezse oyuncuya yönelip kaybolur.</p></div>
+                    <img class="boss-animation" src="../animation/Skeletron_Prime.gif" alt="Skeletron Prime animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-plantera">
+                    <div class="boss-copy"><h3>Plantera</h3><p>Üç mekanik boss yenildikten sonra Underground Jungle'da açan Plantera's Bulb ile uyanır. Tohumlar ve dikenli toplarla saldırır; ikinci aşamada daha hızlı ve saldırgan olur.</p><p><strong>Çağırma:</strong> Underground Jungle'daki Plantera's Bulb'ı kırın.</p><p class="boss-stats"><strong>Can:</strong> 30.000 / 42.000 / 53.550</p><p>Underground Jungle dışına çıkıldığında öfkelenir. Yenilmesi Temple Key verir ve Hardmode Dungeon düşmanlarını güçlendirir.</p></div>
+                    <img class="boss-animation" src="../animation/Plantera.gif" alt="Plantera animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-golem">
+                    <div class="boss-copy"><h3>Golem</h3><p>Jungle Temple'da karşılaşılan taş bir otomattır. Önce başı ve yumruklarıyla saldırır; başı yenilince havalanıp ateş topları ve ışınlar kullanır.</p><p><strong>Çağırma:</strong> Plantera'yı yenip Temple Key ile tapınağa girin, ardından Lihzahrd Altar'da Lihzahrd Power Cell kullanın.</p><p class="boss-stats"><strong>Toplam can:</strong> 60.000 / 90.000 / 114.749</p><p>İlk aşamada yumrukları yok etmek zorunlu değildir; ikinci aşamada gövde savunmasız kalır.</p></div>
+                    <img class="boss-animation" src="../animation/Golem.gif" alt="Golem animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-duke-fishron">
+                    <div class="boss-copy"><h3>Duke Fishron</h3><p>Ocean'da balık tutarken ortaya çıkan mutant bir deniz boss'udur. Hücumları arasında patlayan baloncuklar ve Sharknado'lar bulunur; uzman modunda üçüncü aşamaya geçebilir.</p><p><strong>Çağırma:</strong> Ocean'da balık tutarken Truffle Worm'u yem olarak kullanın.</p><p class="boss-stats"><strong>Can:</strong> 60.000 / 78.000 / 99.450</p><p>Hardmode başlar başlamaz çağrılabilir; ancak wiki, savaşın genellikle daha ileri aşama ekipmanı gerektirdiğini not eder.</p></div>
+                    <img class="boss-animation" src="../animation/Duke_Fishron.gif" alt="Duke Fishron animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-empress-of-light">
+                    <div class="boss-copy"><h3>Empress of Light</h3><p>Hallow'da Plantera yenildikten sonra ortaya çıkan, hareketli ve mermi düzenlerine dayalı isteğe bağlı bir boss'tur. Gündüz çok daha tehlikeli hale gelir.</p><p><strong>Çağırma:</strong> Hallow'da gece beliren Prismatic Lacewing'i öldürün.</p><p class="boss-stats"><strong>Can:</strong> 70.000 / 98.000 / 124.950</p><p>Gündüz öfkelenip çok daha fazla hasar verir; yenilmesi ana oyun ilerlemesi için zorunlu değildir.</p></div>
+                    <img class="boss-animation" src="../animation/Empress_of_Light.gif" alt="Empress of Light animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-lunatic-cultist">
+                    <div class="boss-copy"><h3>Lunatic Cultist</h3><p>Dungeon girişindeki kültistleri yendikten sonra belirir. Büyüler, element saldırıları ve kopyalar kullanır; yenildiğinde Lunar Events başlar.</p><p><strong>Çağırma:</strong> Golem'i yendikten sonra Dungeon girişindeki dört Cultist'i alt edin.</p><p class="boss-stats"><strong>Can:</strong> 32.000 / 48.000 / 61.200</p><p>Sahte kopyalardan yanlışını vurmak Phantasm Dragon çağırabilir.</p></div>
+                    <img class="boss-animation" src="../animation/Lunatic_Cultist.gif" alt="Lunatic Cultist animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-moon-lord">
+                    <div class="boss-copy"><h3>Moon Lord</h3><p>Terraria'nın son boss'udur. Ellerindeki ve başındaki gözler yok edilince göğsündeki çekirdek açılır; ışın ve takip eden mermiler kullanır.</p><p><strong>Çağırma:</strong> Dört Celestial Pillar'ı yenin veya Celestial Sigil kullanın.</p><p class="boss-stats"><strong>Toplam can:</strong> 145.000 (Klasik)</p><p>Luminite her zaman düşer; oyun sonu zırh ve araçlarının üretiminde kullanılır.</p></div>
+                    <img class="boss-animation" src="../animation/Moon_Lord.gif" alt="Moon Lord animasyonu" loading="lazy">
+                </article>
+            </section>
+
+            <section class="boss-group" id="event-bosses">
+                <h2>Etkinlik Bossları</h2>
+                <article class="boss-entry" id="boss-dark-mage">
+                    <div class="boss-copy"><h3>Dark Mage</h3><p>Old One's Army'nin ilk kademesinin son dalgasında görülen mini boss'tur. Karanlık enerji fırlatır, yakındaki düşmanları iyileştirir veya iskeletler çağırır.</p><p><strong>Etkinlik:</strong> Eternia Crystal ile Old One's Army'yi başlatın.</p></div>
+                    <img class="boss-animation" src="../animation/Dark_Mage.gif" alt="Dark Mage animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-ogre">
+                    <div class="boss-copy"><h3>Ogre</h3><p>Old One's Army'nin ikinci kademesinin son dalgasındaki mini boss'tur. Yavaşlatan sümük fırlatır, yere zıplayarak şok dalgası oluşturur ve sopasıyla vurur.</p><p><strong>Etkinlik:</strong> Eternia Crystal ile Old One's Army'yi başlatın.</p></div>
+                    <img class="boss-animation" src="../animation/Ogre.gif" alt="Ogre animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-betsy">
+                    <div class="boss-copy"><h3>Betsy</h3><p>Old One's Army'nin üçüncü ve son kademesinin final mini boss'udur. Hızlı hücum eder, ateş topları ve alev akımları kullanır; Etherian Wyvern'lar çağırabilir.</p><p><strong>Etkinlik:</strong> Eternia Crystal ile Old One's Army'nin üçüncü kademesine ulaşın.</p></div>
+                    <img class="boss-animation" src="../animation/Betsy.gif" alt="Betsy animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-flying-dutchman">
+                    <div class="boss-copy"><h3>Flying Dutchman</h3><p>Pirate Invasion mini boss'udur. Dört topu ve mürettebatı saldırır; gemiyi yok etmek için toplarını devre dışı bırakmak gerekir.</p><p><strong>Etkinlik:</strong> Pirate Map ile Pirate Invasion başlatın; ilerleme yarıyı geçince belirebilir.</p></div>
+                    <img class="boss-animation" src="../animation/Flying_Dutchman.gif" alt="Flying Dutchman animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-mourning-wood">
+                    <div class="boss-copy"><h3>Mourning Wood</h3><p>Pumpkin Moon sırasında ortaya çıkar. Duvarlardan geçebilen alevli mermiler ve yerde bir süre kalan ateş püskürtür.</p><p><strong>Etkinlik:</strong> Pumpkin Moon Medallion kullanarak Pumpkin Moon'u başlatın.</p></div>
+                    <img class="boss-animation" src="../animation/Mourning_Wood.gif" alt="Mourning Wood animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-pumpking">
+                    <div class="boss-copy"><h3>Pumpking</h3><p>Pumpkin Moon'un son mini boss'udur. Yüz ifadesi saldırı biçimini haber verir; tırpanları, dönen bıçakları ve alev püskürtmesiyle saldırır.</p><p><strong>Etkinlik:</strong> Pumpkin Moon Medallion kullanarak Pumpkin Moon'u başlatın.</p></div>
+                    <img class="boss-animation" src="../animation/Pumpking.gif" alt="Pumpking animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-everscream">
+                    <div class="boss-copy"><h3>Everscream</h3><p>Frost Moon mini boss'udur. Çam iğneleri fırlatır ve yere düşüp parçacıklara ayrılan süsler bırakır.</p><p><strong>Etkinlik:</strong> Naughty Present kullanarak Frost Moon'u başlatın.</p></div>
+                    <img class="boss-animation" src="../animation/Everscream.gif" alt="Everscream animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-santa-nk1">
+                    <div class="boss-copy"><h3>Santa-NK1</h3><p>Frost Moon'da beliren mekanik mini boss'tur. Makineli tüfek, roketler ve sivri toplar kullanır; ikinci aşamada yüzü robotik bir görünüme dönüşür.</p><p><strong>Etkinlik:</strong> Naughty Present kullanarak Frost Moon'u başlatın.</p></div>
+                    <img class="boss-animation" src="../animation/Santa-NK1.gif" alt="Santa-NK1 animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-ice-queen">
+                    <div class="boss-copy"><h3>Ice Queen</h3><p>Frost Moon'un son mini boss'udur. Yukarıdan buz sarkıtları bırakır, dönerken çevresine buz saçar ve buz dalgaları yollar.</p><p><strong>Etkinlik:</strong> Naughty Present kullanarak Frost Moon'u başlatın.</p></div>
+                    <img class="boss-animation" src="../animation/Ice_Queen.gif" alt="Ice Queen animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-martian-saucer">
+                    <div class="boss-copy"><h3>Martian Saucer</h3><p>Martian Madness sırasında ortaya çıkan uçan mini boss'tur. Taretleri lazer ve roket saldırıları yapar; taretler yenilince hızlı bir ikinci aşamaya geçer.</p><p><strong>Etkinlik:</strong> Martian Probe'un oyuncuyu fark edip kaçmasına izin verin; istila ilerlemesi yeterli düzeye ulaşınca belirir.</p></div>
+                    <img class="boss-animation" src="../animation/Martian_Saucer.gif" alt="Martian Saucer animasyonu" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-solar-pillar">
+                    <div class="boss-copy"><h3>Solar Pillar</h3><p>Lunar Events sütunlarından biridir. Kalkanı, çevresindeki düşmanlardan yeterli sayıda yenilince düşer; kendisi ateş topları atarken minyonları yakın dövüşür.</p><p><strong>Etkinlik:</strong> Lunatic Cultist'i yendikten sonra Lunar Events sırasında belirir.</p></div>
+                    <img class="boss-animation" src="../animation/Solar_Pillar.png" alt="Solar Pillar görseli" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-nebula-pillar">
+                    <div class="boss-copy"><h3>Nebula Pillar</h3><p>Lunar Events sütunudur ve çevresindeki düşmanlar ağırlıklı olarak büyü saldırıları kullanır. Kalkanı, yeterli sayıda düşman yenilince kalkar.</p><p><strong>Etkinlik:</strong> Lunatic Cultist'i yendikten sonra Lunar Events sırasında belirir.</p></div>
+                    <img class="boss-animation" src="../animation/Nebula_Pillar.png" alt="Nebula Pillar görseli" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-vortex-pillar">
+                    <div class="boss-copy"><h3>Vortex Pillar</h3><p>Lunar Events sütunudur. Kalkanını indirmek için çevresindeki düşmanları yenmek gerekir; sütun oyuncunun üzerinde portal açıp yıldırım veya yaratık çağırabilir.</p><p><strong>Etkinlik:</strong> Lunatic Cultist'i yendikten sonra Lunar Events sırasında belirir.</p></div>
+                    <img class="boss-animation" src="../animation/Vortex_Pillar.png" alt="Vortex Pillar görseli" loading="lazy">
+                </article>
+                <article class="boss-entry" id="boss-stardust-pillar">
+                    <div class="boss-copy"><h3>Stardust Pillar</h3><p>Lunar Events sütunudur; yıldız kümelerinden yeni düşmanlar çıkarır. Diğer sütunlarda olduğu gibi kalkanı, çevresindeki düşmanlar yeterince azaltılınca açılır.</p><p><strong>Etkinlik:</strong> Lunatic Cultist'i yendikten sonra Lunar Events sırasında belirir.</p></div>
+                    <img class="boss-animation" src="../animation/Stardust_Pillar.png" alt="Stardust Pillar görseli" loading="lazy">
+                </article>
+            </section>
+
+            <section class="boss-group" id="special-seed-boss">
+                <h2>Özel Dünya Bossu</h2>
+                <article class="boss-entry" id="boss-mechdusa">
+                    <div class="boss-copy"><h3>Mechdusa</h3><p>The Twins, The Destroyer ve Skeletron Prime'ın birleşiminden oluşan özel bir boss'tur. Üç mekanik boss'un farklı saldırılarını tek savaşta bir araya getirir.</p><p><strong>Çağırma:</strong> For the Worthy ve Remix özelliklerini birleştiren özel dünyada Ocram's Razor kullanın.</p></div>
+                    <img class="boss-animation" src="../animation/Mechdusa.png" alt="Mechdusa görseli" loading="lazy">
+                </article>
+            </section>
+
+            <aside class="boss-source" id="kaynak">
+                <p>Bilgiler ve görseller <a href="https://terraria.wiki.gg/wiki/Bosses" target="_blank" rel="noopener noreferrer">Terraria Wiki.gg Bosses</a> sayfasından yararlanılarak özetlenmiş ve Türkçeye uyarlanmıştır; medya dosyaları yerel <code>animation/</code> klasöründen yüklenir. Kaynak içerik <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a> lisansına tabidir.</p>
+            </aside>
+        </div>
     </main>
     <footer>
         <p>&copy; 2026 Oyun Rehberi. Tüm hakları saklıdır.</p>
