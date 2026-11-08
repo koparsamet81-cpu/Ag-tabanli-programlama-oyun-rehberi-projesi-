@@ -7,3 +7,6 @@ https://drive.google.com/file/d/1kLT7F81DFtYG4hl_CClgYQ60ueIWpHC_/view?usp=drive
 
 Hafta 2
 https://drive.google.com/file/d/1ZgPwtbkvUDKXnB0TwCmj2zNohOF9xinl/view?usp=sharing
+
+Hafta 3
+https://drive.google.com/file/d/18cEjKzMTILdhgHLWPb-LrSZBRJUhAYcY/view?usp=sharing
